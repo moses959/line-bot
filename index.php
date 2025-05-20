@@ -61,7 +61,7 @@ function callOpenRouter($userMessage, $apiKey) {
         'X-Title: LineBot-PHP'
     ];
     $data = [
-        'model' => 'openai/gpt-3.5-turbo',
+        'model' => 'google/gemini-2.0-flash-001',
         'messages' => [
             ['role' => 'system', 'content' => '你是LINE機器人助手'],
             ['role' => 'user', 'content' => $userMessage]
